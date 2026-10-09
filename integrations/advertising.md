@@ -1,6 +1,6 @@
 # Integration: Advertising Platforms
 
-> **Status: NOT CONNECTED.** This file is documentation only. No account, API key or connection has been set up. Do not connect, authenticate or spend money without explicit owner instruction. Never store credentials in this repo; use a gitignored `.env` file.
+> **Status: CONNECTOR LINKED — NOT APPROVED FOR USE.** TikTok for Business and Adspirer connectors are linked to the owner's claude.ai account, but no use has been approved and the account decisions below are still open. Every write, generation, publication, payment or ad action triggers an approval prompt (`.claude/settings.json`) and needs the owner's explicit approval for that single action; see the external action approval procedure in `CLAUDE.md`. Never store credentials in this repo; use a gitignored `.env` file.
 
 ## Role
 Paid advertising to reach parents, coaches, schools and clubs. Strategy and rules are in `marketing/`.
@@ -8,7 +8,9 @@ Paid advertising to reach parents, coaches, schools and clubs. Strategy and rule
 ## Platforms under consideration
 | Platform | Status | Notes |
 |---|---|---|
-| `TO BE CONFIRMED` | Not connected | |
+| `TO BE CONFIRMED` | Not chosen | Platform choice is still an owner decision. |
+| TikTok for Business | Connector linked — not approved for use | Linked to the owner's account. Not a platform decision. |
+| Adspirer (multi-platform) | Connector linked — not approved for use | Linked to the owner's account. Not a platform decision. |
 
 ## Rules
 - No campaign is created, launched or edited, and no money is spent, without explicit owner approval of the creative, audience and budget.

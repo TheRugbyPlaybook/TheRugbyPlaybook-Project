@@ -1,6 +1,6 @@
 # Integration: Stripe (Payments)
 
-> **Status: NOT CONNECTED.** This file is documentation only. No account, API key or connection has been set up. Do not connect, authenticate or spend money without explicit owner instruction. Never store credentials in this repo; use a gitignored `.env` file.
+> **Status: CONNECTOR LINKED — NOT APPROVED FOR USE.** A Stripe connector is linked to the owner's claude.ai account, but no use has been approved and the account decisions below are still open. Every write, generation, publication, payment or ad action triggers an approval prompt (`.claude/settings.json`) and needs the owner's explicit approval for that single action; see the external action approval procedure in `CLAUDE.md`. Never store credentials in this repo; use a gitignored `.env` file.
 
 ## Role
 Stripe processes customer payments for eBook purchases, connected to the Base44 storefront.

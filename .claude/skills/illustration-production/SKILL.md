@@ -37,7 +37,7 @@ illustrations/<age>/<PRODUCT-ID>/
 ```
 
 ## Rules
-- **OpenArt is not connected.** Write prompts as text only. Do not generate images or spend credits without explicit owner instruction.
+- **OpenArt use is not approved.** Write prompts as text only. Do not generate images or spend credits without explicit owner approval of that specific generation, after stating its credit cost.
 - Do not reference competitor art, named living artists, real players, team kits or logos in prompts.
 - Do not use competitor images as reference inputs.
 - Show rugby technique correctly and safely, especially tackles and contact.

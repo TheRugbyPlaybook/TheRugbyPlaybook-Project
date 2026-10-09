@@ -13,10 +13,13 @@ This repository is the **source of truth** for briefs, outlines, page plans, boo
 | Tool | Responsibility | Status |
 |---|---|---|
 | **Claude Code** | Content and workflow orchestration. Writes briefs, outlines, page plans, book text, character profiles, illustration prompts and quality-check reports. Keeps files organised, applies naming conventions and tracks publication state. | Active (this repo) |
-| **OpenArt** | Generates illustrations from prompts and character reference sheets prepared in this repo. | NOT CONNECTED — documentation only (`integrations/openart.md`) |
-| **Canva** | Page design, layout, brand templates and PDF export of the finished eBook. | NOT CONNECTED — documentation only (`integrations/canva.md`) |
-| **Base44** | Digital storefront, product listings and customer access to purchased eBooks. | NOT CONNECTED — documentation only (`integrations/base44.md`) |
-| **Stripe** | Payment processing for eBook sales. | NOT CONNECTED — documentation only (`integrations/stripe.md`) |
+| **OpenArt** | Generates illustrations from prompts and character reference sheets prepared in this repo. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/openart.md`) |
+| **Canva** | Page design, layout, brand templates and PDF export of the finished eBook. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/canva.md`) |
+| **Base44** | Digital storefront, product listings and customer access to purchased eBooks. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/base44.md`) |
+| **Stripe** | Payment processing for eBook sales. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/stripe.md`) |
+| **TikTok for Business / Adspirer** | Paid advertising. Platform choice is `TO BE CONFIRMED`. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/advertising.md`) |
+
+Other connectors linked to the owner's account (Gmail, Google Drive, Google Calendar, Supabase, GitHub, and the small-business plugin services) are also **not approved for TRP use** unless the owner says so.
 
 ### Integration rules
 - Do **not** connect, authenticate, call or configure any external service unless the owner explicitly asks for it in that session.
@@ -24,6 +27,17 @@ This repository is the **source of truth** for briefs, outlines, page plans, boo
 - Do **not** publish anything, or spend money (including generation credits), without explicit owner approval.
 - Never claim an integration is connected or that an action happened in an external tool when it did not.
 - Never commit secrets. Credentials belong in `.env` files, which are gitignored.
+- Never edit `.claude/settings.json` to remove or weaken a permission rule without the owner's explicit approval.
+
+### External action approval procedure
+`.claude/settings.json` makes Claude Code show an approval prompt before every external write, generation, publication, payment, message, ad change or `git push`. That prompt is the enforcement. The steps below are instructions Claude must follow before triggering it:
+
+1. **Explain first.** In chat, state what the action is, which tool and account it touches, why, and whether it can be undone.
+2. **OpenArt generation.** Check the cost first (`openart_model_cost`, read-only). State the model, number of images or videos, credit cost and remaining balance. Ask for approval of that specific generation.
+3. **Stripe writes.** Check whether the account is in test or live mode (read-only). Explain the exact call and any live financial consequence (charge, refund, payout, price or product customers will see). Never make a live payment or charge without explicit owner approval.
+4. **Always ask first** before Base44 deployment or publication, Canva publishing, GitHub merges, and any advertising launch or change.
+5. **One approval covers one action.** Approval of one action never approves a later or similar action.
+6. If the owner rejects or does not answer a prompt, do not retry the action another way.
 
 ## 3. Age groups
 
@@ -111,7 +125,7 @@ Brand colours, fonts, logo, characters, art style, pricing and other business de
 | `age-groups/` | Writing and design guides per age group |
 | `books/` | One folder per book, by age group |
 | `illustrations/` | Illustration plans, prompts and generated images, by age group |
-| `integrations/` | Documentation for external tools (not connected) |
+| `integrations/` | Documentation for external tools (linked connectors, not approved for use) |
 | `assets/` | Logos, backgrounds, icons, reference images |
 | `templates/` | Canva and page-layout templates |
 | `research/` | Competitor and market research (general lessons only) |
