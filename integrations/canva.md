@@ -1,6 +1,11 @@
 # Integration: Canva (Design and PDF Export)
 
-> **Status: NOT CONNECTED.** This file is documentation only. No account, API key or connection has been set up. Do not connect, authenticate or spend money without explicit owner instruction. Never store credentials in this repo; use a gitignored `.env` file.
+> Never store credentials in this repo; use a gitignored `.env` file. A connection is not permission: every guarded action also needs the owner's explicit instruction.
+
+## Connection status (verified 2026-10-09)
+- **Verified (read-only):** the connector works and can search the owner's existing designs. None of them are TRP work yet. **No Brand Kit exists.**
+- **Possible, not tested:** creating, editing, copying, resizing and exporting designs; brand templates; asset uploads; image generation. Whether the current plan allows Brand Kits and brand templates is unverified.
+- **Guarded in `.claude/settings.json` (asks each time):** all create, edit, generate, export, upload, publish-template, folder and comment actions.
 
 ## Role
 Canva handles page layout, cover design, brand templates and PDF export of finished eBooks.

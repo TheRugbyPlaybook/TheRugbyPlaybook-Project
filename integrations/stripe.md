@@ -1,6 +1,14 @@
 # Integration: Stripe (Payments)
 
-> **Status: NOT CONNECTED.** This file is documentation only. No account, API key or connection has been set up. Do not connect, authenticate or spend money without explicit owner instruction. Never store credentials in this repo; use a gitignored `.env` file.
+> Never store credentials in this repo; use a gitignored `.env` file. A connection is not permission: every guarded action also needs the owner's explicit instruction.
+
+## Connection status (verified 2026-10-09)
+> ⚠️ **LIVE MODE ONLY.** The only account available ("The Rugby Playbook") is in live mode, and there is no test account. Any write could create real products or prices, or move real money.
+
+- **Verified (read-only):** the account listing.
+- **Possible, not tested:** API reads and writes (products, prices, payment links), analytics.
+- **Guarded in `.claude/settings.json` (asks each time):** `stripe_api_write`, account management, Atlas company formation.
+- **Rule:** no Stripe writes until a test environment exists and the owner says to proceed.
 
 ## Role
 Stripe processes customer payments for eBook purchases, connected to the Base44 storefront.
@@ -19,7 +27,8 @@ Stripe processes customer payments for eBook purchases, connected to the Base44 
 | Pricing per age group / bundles | `TO BE CONFIRMED` |
 | Tax / GST handling | `TO BE CONFIRMED` |
 | Refund policy | `TO BE CONFIRMED` |
+| Test mode / sandbox set-up | `TO BE CONFIRMED` (required before any write) |
 
 ## Rules
 - Never create live products, prices, payment links or charges without explicit owner instruction.
-- Use test mode for any trial set-up.
+- Use test mode for any trial set-up. A test environment does not exist yet.

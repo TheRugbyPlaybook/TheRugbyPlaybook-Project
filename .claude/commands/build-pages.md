@@ -20,4 +20,4 @@ Build the page content for **$ARGUMENTS** using the `book-production` skill.
 
 ## Rules
 - No placeholder text in content intended for layout. Mark gaps clearly as `TO BE CONFIRMED`.
-- Do not create or edit Canva designs. Canva is not connected.
+- Do not create or edit Canva designs unless the owner explicitly instructs it.

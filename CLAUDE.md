@@ -13,13 +13,19 @@ This repository is the **source of truth** for briefs, outlines, page plans, boo
 | Tool | Responsibility | Status |
 |---|---|---|
 | **Claude Code** | Content and workflow orchestration. Writes briefs, outlines, page plans, book text, character profiles, illustration prompts and quality-check reports. Keeps files organised, applies naming conventions and tracks publication state. | Active (this repo) |
-| **OpenArt** | Generates illustrations from prompts and character reference sheets prepared in this repo. | NOT CONNECTED — documentation only (`integrations/openart.md`) |
-| **Canva** | Page design, layout, brand templates and PDF export of the finished eBook. | NOT CONNECTED — documentation only (`integrations/canva.md`) |
-| **Base44** | Digital storefront, product listings and customer access to purchased eBooks. | NOT CONNECTED — documentation only (`integrations/base44.md`) |
-| **Stripe** | Payment processing for eBook sales. | NOT CONNECTED — documentation only (`integrations/stripe.md`) |
+| **OpenArt** | Generates illustrations from prompts and character reference sheets prepared in this repo. | Connector available (verified 2026-10-09). Plus plan. Production setup not configured. See `integrations/openart.md` |
+| **Canva** | Page design, layout, brand templates and PDF export of the finished eBook. | Connector available (verified 2026-10-09). No Brand Kit yet. Production setup not configured. See `integrations/canva.md` |
+| **Base44** | Digital storefront, product listings and customer access to purchased eBooks. | Connector available (verified 2026-10-09). An app named "The Rugby Playbook" already exists; its contents have not been reviewed. See `integrations/base44.md` |
+| **Stripe** | Payment processing for eBook sales. | Connector available (verified 2026-10-09). ⚠️ **Live mode only, no test account.** Production setup not configured. See `integrations/stripe.md` |
+
+TikTok for Business and Adspirer (advertising) connectors are also available. See `integrations/advertising.md`.
 
 ### Integration rules
-- Do **not** connect, authenticate, call or configure any external service unless the owner explicitly asks for it in that session.
+- **A connection is not permission.** A working connector does not mean an action is approved, or that every feature is available on the current plan.
+- Tools that write, spend credits or money, or publish are gated by ask-rules in `.claude/settings.json`. They also need the owner's explicit instruction for that specific action, and a permission prompt is not a substitute for that instruction.
+- Check the OpenArt credit cost before any generation and tell the owner what it will cost.
+- No Stripe write actions until a test environment exists and the owner says to proceed.
+- Do **not** connect, authenticate, call or configure any external service unless the owner explicitly asks for it in that session. Read-only checks (account status, listings) are allowed when the owner asks for an audit.
 - Do **not** create API keys, accounts, products, prices, payment links, ad campaigns or listings.
 - Do **not** publish anything, or spend money (including generation credits), without explicit owner approval.
 - Never claim an integration is connected or that an action happened in an external tool when it did not.
@@ -111,7 +117,7 @@ Brand colours, fonts, logo, characters, art style, pricing and other business de
 | `age-groups/` | Writing and design guides per age group |
 | `books/` | One folder per book, by age group |
 | `illustrations/` | Illustration plans, prompts and generated images, by age group |
-| `integrations/` | Documentation for external tools (not connected) |
+| `integrations/` | External tool status and documentation |
 | `assets/` | Logos, backgrounds, icons, reference images |
 | `templates/` | Canva and page-layout templates |
 | `research/` | Competitor and market research (general lessons only) |

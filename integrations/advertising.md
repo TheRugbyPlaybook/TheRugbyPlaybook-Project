@@ -1,6 +1,10 @@
 # Integration: Advertising Platforms
 
-> **Status: NOT CONNECTED.** This file is documentation only. No account, API key or connection has been set up. Do not connect, authenticate or spend money without explicit owner instruction. Never store credentials in this repo; use a gitignored `.env` file.
+> Never store credentials in this repo; use a gitignored `.env` file. A connection is not permission: every guarded action also needs the owner's explicit instruction.
+
+## Connection status (verified 2026-10-09)
+- **Available in Claude Code sessions:** TikTok for Business and Adspirer (Google, Meta, TikTok, LinkedIn, Amazon, ChatGPT ads). Neither has been audited, and which ad accounts are linked is unverified.
+- **Guarded in `.claude/settings.json` (asks each time):** **every** tool on both servers, reads included.
 
 ## Role
 Paid advertising to reach parents, coaches, schools and clubs. Strategy and rules are in `marketing/`.
@@ -8,7 +12,9 @@ Paid advertising to reach parents, coaches, schools and clubs. Strategy and rule
 ## Platforms under consideration
 | Platform | Status | Notes |
 |---|---|---|
-| `TO BE CONFIRMED` | Not connected | |
+| TikTok for Business | Connector available, not audited | |
+| Adspirer (multi-platform) | Connector available, not audited | |
+| Others | `TO BE CONFIRMED` | |
 
 ## Rules
 - No campaign is created, launched or edited, and no money is spent, without explicit owner approval of the creative, audience and budget.

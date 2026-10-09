@@ -1,6 +1,12 @@
 # Integration: Base44 (Storefront and Customer Access)
 
-> **Status: NOT CONNECTED.** This file is documentation only. No account, API key or connection has been set up. Do not connect, authenticate or spend money without explicit owner instruction. Never store credentials in this repo; use a gitignored `.env` file.
+> Never store credentials in this repo; use a gitignored `.env` file. A connection is not permission: every guarded action also needs the owner's explicit instruction.
+
+## Connection status (verified 2026-10-09)
+- **Verified (read-only):** the connector works, and an app named **"The Rugby Playbook"** already exists. Its contents, build status and published state have **not** been reviewed.
+- **Possible, not tested:** builder-AI edits (these cost Base44 credits), direct code edits, data-model and record changes, deploy/publish, secrets and custom domains.
+- **Risk:** a deploy makes changes live to customers.
+- **Guarded in `.claude/settings.json` (asks each time):** app creation, builder edits, `execute_api` (deploys, secrets, domains, and reads through it too), file edits, commands, checkpoints, entity and schema changes, connector connections.
 
 ## Role
 Base44 hosts the digital storefront: product pages, customer accounts and secure access to purchased eBooks.
