@@ -1,0 +1,55 @@
+# ---------------------------------------------
+# The Rugby Playbook — .gitignore
+# Markdown sources and final eBooks ARE tracked.
+# ---------------------------------------------
+
+# Secrets and credentials (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+*credentials*.json
+*service-account*.json
+*.secret
+*.secrets
+
+# Local tool state
+.claude/settings.local.json
+.claude/*.local.*
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+Icon?
+
+# Temporary and scratch files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+~$*
+.~lock.*
+
+# Logs and caches
+*.log
+logs/
+.cache/
+node_modules/
+__pycache__/
+*.pyc
+
+# NOTE: output/final/ and output/previews/ are intentionally NOT ignored.
+# If eBook files become too large for git, discuss Git LFS before ignoring them.
