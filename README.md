@@ -25,7 +25,7 @@ brief → outline → page plan → content → illustration plan → assets →
 | `/quality-check` | Run the quality checklist on a book |
 | `/export-book` | Prepare an approved book for final export |
 
-## Tool stack (planned, not connected)
+## Tool stack (planned; connectors linked but not approved for use)
 Claude Code (content and workflow) · OpenArt (illustrations) · Canva (design and PDF) · Base44 (storefront and access) · Stripe (payments)
 
 ## Rules

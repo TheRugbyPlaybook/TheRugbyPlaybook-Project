@@ -28,4 +28,4 @@ Every book moves through these nine stages in order. The current stage and state
 - If quality check fails, return to the relevant earlier stage.
 
 ## External tools
-OpenArt, Canva, Base44 and Stripe are **not connected**. Steps involving them are manual until the owner decides otherwise (see `integrations/`).
+OpenArt, Canva, Base44 and Stripe connectors are linked to the owner's account but **not approved for use**. Steps involving them are manual until the owner decides otherwise, and every external action needs per-action owner approval (see `integrations/` and the approval procedure in `CLAUDE.md`).
