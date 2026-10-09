@@ -17,6 +17,7 @@ This repository is the **source of truth** for briefs, outlines, page plans, boo
 | **Canva** | Page design, layout, brand templates and PDF export of the finished eBook. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/canva.md`) |
 | **Base44** | Digital storefront, product listings and customer access to purchased eBooks. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/base44.md`) |
 | **Stripe** | Payment processing for eBook sales. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/stripe.md`) |
+| **Shopify** | Current live catalogue, checkout and paid-file delivery behind the Base44 site. | Current live backend — being retired (`integrations/shopify.md`, `docs/migration/shopify-to-base44-stripe.md`). All Shopify actions are manual by the owner. |
 | **TikTok for Business / Adspirer** | Paid advertising. Platform choice is `TO BE CONFIRMED`. | Connector linked to owner's account — NOT APPROVED FOR USE (`integrations/advertising.md`) |
 
 Other connectors linked to the owner's account (Gmail, Google Drive, Google Calendar, Supabase, GitHub, and the small-business plugin services) are also **not approved for TRP use** unless the owner says so.

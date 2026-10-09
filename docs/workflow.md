@@ -29,3 +29,5 @@ Every book moves through these nine stages in order. The current stage and state
 
 ## External tools
 OpenArt, Canva, Base44 and Stripe connectors are linked to the owner's account but **not approved for use**. Steps involving them are manual until the owner decides otherwise, and every external action needs per-action owner approval (see `integrations/` and the approval procedure in `CLAUDE.md`).
+
+The live store currently runs on Shopify and is being replaced by Base44 + Stripe. See `docs/migration/shopify-to-base44-stripe.md`.
